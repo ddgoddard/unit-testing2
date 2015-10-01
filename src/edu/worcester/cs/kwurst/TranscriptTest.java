@@ -80,4 +80,21 @@ public class TranscriptTest {
 		
 	}
 	
+	@Test
+	public void testAddCourse(){
+		Course c = new Course("CS", 443, "Quality Assurance", 3);
+		student1.addCourse(c, "Fall", 2015, gradeA);
+		assertTrue(student1.getCurrentEarnedCr() == 3);
+	}
+	
+	@Test
+	public void testGetTranscript(){
+		student2.addCourse(course2,"spring", 2016, gradeA);
+		assertTrue(student2.getTranscript() != null);
+	}
+	
+	
+	
+	
+	
 }
