@@ -5,11 +5,16 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+<<<<<<< HEAD
 import edu.worcester.cs.kwurst.Transcript.Semester;
 
 public class TranscriptTest {
 
 	private Transcript t1;
+=======
+public class TranscriptTest {
+
+>>>>>>> origin/transcript-refactor
 	private Student student1;
 	private Student student2;
 	
@@ -18,10 +23,17 @@ public class TranscriptTest {
 	
 	@Before
 	public void setUp() throws Exception {
+<<<<<<< HEAD
 		t1 = new Transcript();
 		student1 = new Student("Jane", "Smith");
 		student2 = new Student("Jonathan", "Shatos");
 		
+=======
+		student1 = new Student("Jane", "Smith");
+		student2 = new Student("Jonathan", "Shatos");
+		
+		
+>>>>>>> origin/transcript-refactor
 		course1 = new Course("CS", 201, "Data Mining", 3);
 		course2 = new Course("Math", 301, "Calculus", 4);
 		
@@ -32,6 +44,7 @@ public class TranscriptTest {
 	}
 
 	@Test
+<<<<<<< HEAD
 	public void testGpa() {
 		assertEquals(0.0, t1.getGpa(), 0.0);
 		t1.addCourse(
@@ -49,6 +62,8 @@ public class TranscriptTest {
 	}  
 	
 	@Test
+=======
+>>>>>>> origin/transcript-refactor
 	public void testGetLetterGrade(){
 		assertEquals("A", gradeA.getLetterGrade());
 		assertEquals("C+", gradeCplus.getLetterGrade());
@@ -100,6 +115,7 @@ public class TranscriptTest {
 		
 	}
 	
+<<<<<<< HEAD
 	@Test
 	public void testAddCourse(){
 		Course c = new Course("CS", 443, "Quality Assurance", 3);
@@ -113,4 +129,6 @@ public class TranscriptTest {
 		assertTrue(student2.getTranscript() != null);
 	}
 
+=======
+>>>>>>> origin/transcript-refactor
 }
